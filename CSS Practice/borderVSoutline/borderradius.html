@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            border: 2px solid;
+            padding:10px;
+            display:inline-block;
+            border-radius:20px;
+        }
+        .circle{
+            background-color: blanchedalmond;
+            height: 50px;
+            width: 50px;
+            border:2px solid;
+            border-radius:50%;
+        }
+
+        .leaf{
+            border: 2px solid;
+            border-radius: 0px 100px 0px 100px; 
+            background-color: brown;
+            height: 100px;
+            width: 100px;
+        }
+        .leaf-hover{
+            background-color: beige;
+            height: 100px;
+            width: 100px;
+            border: 2px solid;
+            transition: all 1s;
+        }
+        .leaf-hover:hover{
+          border-radius:  00px 100px 0px 100px;  
+        }
+    </style>
+</head>
+<body>
+    <label for="">Testing</label>
+    <div class="circle"></div>
+    <div class="leaf"></div>
+    <div class="leaf-hover"></div>
+</body>
+</html>
