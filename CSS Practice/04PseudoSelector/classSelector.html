@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1:active{
+            color:yellowgreen;
+            background-color: black;
+        } 
+        .pone:hover{
+            font-size: 22px;
+            color: yellowgreen;
+        }
+        /* input:focus{
+            outline: 3px solid green;
+            background-color: lemonchiffon;
+        }  */
+        div:empty{
+            
+            outline: 2px solid green;
+            height: 4em;
+        }
+        button:disabled{
+               outline: 2px solid blue;
+        }
+        p{
+            font-size: 22px;
+        }
+        .email:invalid {
+            background-color: ivory;
+            border: none;
+            outline: 2px solid red;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 class="active">Amalfi Coast</h1>
+
+    <p class="pone">The Amalfi Coast (Italian: Costiera amalfitana) is a stretch of coastline in southern Italy overlooking the Tyrrhenian Sea and the Gulf of Salerno. It is located south of the Sorrentine Peninsula and north of the Cilentan Coast.
+</p>
+       <p> Celebrated worldwide for its Mediterranean landscape and natural diversity, the Coast is named after the town of Amalfi, which makes up its main historical and political centre. It is a very popular jet set destination, and has been an attraction to upper-class Europeans since the 18th century, when it was a frequent stopover on their Grand Tours. Attracting international tourists of all classes annually,[1] the Amalfi Coast was listed as a UNESCO World Heritage Site in 1997.</p>
+
+       
+        <input type="text" name="book" id="book">BOOK YOUR TICKETS</input>
+      
+       <div contenteditable=""></div>
+       <button disabled>Submit</button>
+       <form action="" method="post">
+        <input type="email" class="email" name="" id="">
+
+</body>
+</html>
