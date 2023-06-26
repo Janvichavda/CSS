@@ -14,10 +14,17 @@ li {
 
 }
 
+.top a i{
+    color: white;
+}
+
+
 li a {
-    color: whitesmoke;
+
+    color: rgba(220, 215, 215, 0.796);
     text-decoration: none;
     font-size: 17px;
+
 }
 
 .space {
@@ -46,18 +53,19 @@ li {
 .right {
     float: right;
     color: white;
-    margin: 0 150px 0 0;
+    margin: 0 70px 0 0;
 }
 
 .right i {
     font-size: 14px;
-    padding: 30px 3px;
+    padding: 25px 0px 0px 0px;
+   
 
 }
 
 .purple {
     background-color: #7633fa;
-    color: whitesmoke;
+    color: white;
     border: none;
     /* border: 0 2px solid; */
     border-left: 1px solid;
@@ -68,15 +76,23 @@ li {
 
 .top a i:hover {
     color: #fff;
-    /* transition: ; */
     transform: rotate(-5deg);
+ 
 }
 
-a:hover {
+.left ul li a:hover {
     color: #fff;
-    ;
 }
 
-.right li i:hover {
+.right li i, .purple {
+    color:rgba(220, 215, 215, 0.796);
+}
+
+.right li i:hover{
+    color: #fff; 
+}
+
+.purple:hover{
     color: #fff;
+
 }
