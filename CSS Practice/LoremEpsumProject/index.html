@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lorem Epsum</title>
     <style>
         * {
             margin: 0;
@@ -15,43 +14,53 @@
             box-sizing: border-box;
         }
 
+        a {
+            /* text-decoration: none; */
+            color: #000;
+            font-size:0.5rem;
+            /* text-align:center; */
+           
+        }
+        a:hover{
+            color:red;
+        }
+        
         h1 {
             /* display: block; */
             margin: 0 auto;
             width: 350px;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: 60px;
+            font-size: 46px;
             line-height: 50px;
 
         }
 
-        a {
-            text-decoration: none;
-            color: #000;
-        }
+       
 
         .main {
-            /* text-align: center; */
+            text-align: center;
             /* width: 50%; */
-            width: 80%;
+            width: 60%;
             margin: 0 auto;
+            font-size:0.5rem;
 
         }
 
         h3 {
-            margin: 10px 10px 20px 10px;
-            font-size: 14px;
-            line-height: 18px;
+            /* margin: 10px 10px 20px 10px; */
+            font-size: 10px;
+            /* line-height: 18px; */
             text-align: center;
             width: 100%;
             font-style: italic;
         }
 
         h4 {
-            font-size: 12px;
-            line-height: 14px;
+            font-size: 7px;
+            /* line-height: 14px; */
             text-align: center;
-            margin: 10px 20px 10px 10px;
+            /* margin: 10px 20px 10px 10px; */
+            margin-bottom: 10px;
             width: 100%;
         }
 
@@ -61,30 +70,79 @@
 
         .left {
             float: left;
-            width: 40%;
-            text-align: center;
+            width: 50%;
+            text-align: justify;
             font-size: 10px;
             /* margin-right: 10px; */
         }
 
         .right {
             float: right;
-            width: 40%;
-            text-align: center;
+            width: 50%;
+            text-align: justify;
             font-size: 10px;
             /* margin: 0px 0px 0px 0px; */
         }
 
 
-        p,
-        h2 {
-            padding: 30px;
+        p {
+            padding: 10px;
 
         }
 
         .clear {
             clear: both;
         }
+        .spanBorder{
+            border: 1px solid;
+            padding: 3px 9px 3px 9px;
+        }
+        hr{
+            clear: both;
+             border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right,rgba(0,0,0,0),rgba(0,0,0,.75),rgba(0,0,0,0));
+        }
+        .bold{
+            font-weight: bold;
+            font-size: 10px;
+            
+        }
+
+        .red{
+            color:red;
+        }
+
+        .word{
+            margin: 0px 7px 5px 7px;
+        }
+
+        .left{
+            text-align: left;
+        }
+
+        .none{
+            text-decoration: none;
+            
+        }
+
+        h5{
+            text-align: left;
+            text-indent: 11px;
+            font-size:9px;
+        }
+
+        .left-start{
+            text-align: left;
+        }
+        
+        
+        
+
+ 
+        
+          
+        
     </style>
 </head>
 
@@ -92,32 +150,70 @@
 
 
     <section>
+        
         <div class="main">
-            <div id="Languages"><a href="http://hy.lipsum.com/">Հայերեն</a> <a href="http://sq.lipsum.com/">Shqip</a>
+            <div id="Languages"><a href="http://hy.lipsum.com/">Հայերեն</a> 
+                <a href="http://sq.lipsum.com/">Shqip</a>
                 <span class="ltr" dir="ltr"><a href="http://ar.lipsum.com/">‫العربية</a></span> <a
-                    href="http://bg.lipsum.com/">Български</a> <a href="http://ca.lipsum.com/">Català</a> <a
-                    href="http://cn.lipsum.com/">中文简体</a> <a href="http://hr.lipsum.com/">Hrvatski</a> <a
-                    href="http://cs.lipsum.com/">Česky</a> <a href="http://da.lipsum.com/">Dansk</a> <a
-                    href="http://nl.lipsum.com/">Nederlands</a> <a class="zz" href="http://www.lipsum.com/">English</a>
-                <a href="http://et.lipsum.com/">Eesti</a> <a href="http://ph.lipsum.com/">Filipino</a> <a
-                    href="http://fi.lipsum.com/">Suomi</a> <a href="http://fr.lipsum.com/">Français</a> <a
-                    href="http://ka.lipsum.com/">ქართული</a> <a href="http://de.lipsum.com/">Deutsch</a> <a
-                    href="http://el.lipsum.com/">Ελληνικά</a> <span class="ltr" dir="ltr"><a
-                        href="http://he.lipsum.com/">‫עברית</a></span> <a href="http://hi.lipsum.com/">हिन्दी</a> <a
-                    href="http://hu.lipsum.com/">Magyar</a> <a href="http://id.lipsum.com/">Indonesia</a> <a
-                    href="http://it.lipsum.com/">Italiano</a> <a href="http://lv.lipsum.com/">Latviski</a> <a
-                    href="http://lt.lipsum.com/">Lietuviškai</a> <a href="http://mk.lipsum.com/">македонски</a> <a
-                    href="http://ms.lipsum.com/">Melayu</a> <a href="http://no.lipsum.com/">Norsk</a> <a
-                    href="http://pl.lipsum.com/">Polski</a> <a href="http://pt.lipsum.com/">Português</a> <a
-                    href="http://ro.lipsum.com/">Româna</a> <a href="http://ru.lipsum.com/">Pyccкий</a> <a
-                    href="http://sr.lipsum.com/">Српски</a> <a href="http://sk.lipsum.com/">Slovenčina</a> <a
-                    href="http://sl.lipsum.com/">Slovenščina</a> <a href="http://es.lipsum.com/">Español</a> <a
-                    href="http://sv.lipsum.com/">Svenska</a> <a href="http://th.lipsum.com/">ไทย</a> <a
-                    href="http://tr.lipsum.com/">Türkçe</a> <a href="http://uk.lipsum.com/">Українська</a> <a
+                    href="http://bg.lipsum.com/">Български</a> 
+                    <a href="http://ca.lipsum.com/">Català</a> 
+                    <a
+                    href="http://cn.lipsum.com/">中文简体</a>
+                     <a href="http://hr.lipsum.com/">Hrvatski</a> 
+                     <a
+                    href="http://cs.lipsum.com/">Česky</a>
+                     <a href="http://da.lipsum.com/">Dansk</a> 
+                     <a
+                    href="http://nl.lipsum.com/">Nederlands</a> 
+                    <a class="zz" href="http://www.lipsum.com/">English</a>
+                <a href="http://et.lipsum.com/">Eesti</a>
+                 <a href="http://ph.lipsum.com/">Filipino</a>
+                  <a
+                    href="http://fi.lipsum.com/">Suomi</a> 
+                    <a href="http://fr.lipsum.com/">Français</a>
+                     <a
+                    href="http://ka.lipsum.com/">ქართული</a>
+                     <a href="http://de.lipsum.com/">Deutsch</a> 
+                     <a
+                    href="http://el.lipsum.com/">Ελληνικά</a> <span class="ltr" dir="ltr">
+                        <a
+                        href="http://he.lipsum.com/">‫עברית</a></span>
+                         <a href="http://hi.lipsum.com/">हिन्दी</a> 
+                         <a
+                    href="http://hu.lipsum.com/">Magyar</a>
+                     <a href="http://id.lipsum.com/">Indonesia</a>
+                      <a
+                    href="http://it.lipsum.com/">Italiano</a> 
+                    <a href="http://lv.lipsum.com/">Latviski</a> 
+                    <a
+                    href="http://lt.lipsum.com/">Lietuviškai</a> 
+                    <a href="http://mk.lipsum.com/">македонски</a>
+                     <a
+                    href="http://ms.lipsum.com/">Melayu</a>
+                     <a href="http://no.lipsum.com/">Norsk</a>
+                      <a
+                    href="http://pl.lipsum.com/">Polski</a> 
+                    <a href="http://pt.lipsum.com/">Português</a> 
+                    <a
+                    href="http://ro.lipsum.com/">Româna</a> 
+                    <a href="http://ru.lipsum.com/">Pyccкий</a>
+                     <a
+                    href="http://sr.lipsum.com/">Српски</a>
+                     <a href="http://sk.lipsum.com/">Slovenčina</a> 
+                     <a
+                    href="http://sl.lipsum.com/">Slovenščina</a> 
+                    <a href="http://es.lipsum.com/">Español</a> 
+                    <a
+                    href="http://sv.lipsum.com/">Svenska</a> 
+                    <a href="http://th.lipsum.com/">ไทย</a> 
+                    <a
+                    href="http://tr.lipsum.com/">Türkçe</a> 
+                    <a href="http://uk.lipsum.com/">Українська</a>
+                     <a
                     href="http://vi.lipsum.com/">Tiếng Việt</a>
             </div>
 
-
+<div><br></div>
 
             <div>
                 <h1>Lorem Ipsum</h1><br>
@@ -126,7 +222,7 @@
                     is
                     pain..."
                 </h4>
-                <hr width="100%">
+                <hr>
             </div>
 
 
@@ -205,10 +301,128 @@
                     exact
                     original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
             </div>
+            <div class="right">
+            <form>
+            <table >
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="type"> 
+                        <label for="radio" value="paragrafe"> paragrafe</label>
+                    </td>
+                    <td> <input type="checkbox"> 
+                            <label>	Fillo me 'Lorem ipsum dolor sit amet...'</label>
+                        </td>
+
+                </tr>
+                <tr>  
+                    
+                    <td rowspan="2"> <span contenteditable="" class="spanBorder">5</span></td>
+                    <td><input type="radio" name="type"> 
+                        <label for="radio" value="fjalë">fjalë</label></td>
+                        <td></td>
+                </tr>
+                <tr>
+                    <td> <input type="radio" name="type"> 
+                        <label for="radio" value="bytes">bytes</label></td>
+                        <td rowspan="2"> <button type="submit" >Gjenero Lorem Ipsum</button></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="type"> 
+                        <label for="radio" value="lista">	lista</label>
+            </td>
+                    
+                </tr>
+
+           
+             
+            
+          
+            
+          
+           
+          
+            
+           
+            <!-- <input type="button" value="Gjenero Lorem Ipsum"> -->
+           
+        </table>
+        </form> 
+    </div>  
+                
+            
+        
             <div class="clear">
                 <hr>
             </div>
+            <div>
+            <p>  <span class="bold"> Translations:</span> Can you help translate this site into a foreign language ? Please email us with details if you can help.
+            </p> 
+            </div>
+            <div class="clear">
+                <hr>
+            </div>
+            <div>
+                <p>There is a set of mock banners available <a href="#" class="red">here </a>in three colours and in a range of standard banner sizes:</p>
+                <a><img src="../Image/black.gif" width="140" height="40" alt="Banners"></a>
+                <a><img src="../Image/grey.gif" width="140" height="40" alt="Banners"></a>
+                <a><img src="../Image/white.gif" width="140" height="40" alt="Banners"></a>
+            </div><br>
+            <div class="clear">
+                <hr>
+            </div><br>
+            <div><span class="bold">Donate:</span> If you use this site regularly and would like to help keep the site on the Internet, please consider donating a small sum to help pay for the hosting and bandwidth bill. There is no minimum donation, any sum is appreciated - click <a href="#" class="red"> here </a> to donate using PayPal. Thank you for your support.
+             <p>   <span class="bold">Donate Bitcoin:</span> 16UQLq1HZ3CNwhvgrarV6pMoA2CDjb4tyF </p>
+
+            </div>
+            <div class="clear">
+                <hr>
+            </div><br>
+            <div>
+            <a href="NodeJs">NodeJs</a>
+                <a class="word" href="Python Interface">Python Interface</a>
+                <a class="word" href="">GTK Lipsum</a>
+                <a class="word" href="">Rails</a>
+                <a class="word" href="">.Net</a>
+                <a class="word" href="">Groovy</a>
+            </div><br>
+            <div class="clear">
+                <hr>
+            </div><br>
+            <br>
+            <br>
+            <br>
+            <div class="clear">
+                <hr>
+            </div><br>
+            <div>
+              <h5>The standard Lorem Ipsum passage, used since the 1500s</h5>
+              <p class="left-start">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+             </p>
+                <h5>Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</h5>
+                <p class="left-start">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+
+                <h5>1914 translation by H. Rackham</h5>
+                <p class="left-start">"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"</p>
+
+                <h5>Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</h5>
+                <p class="left-start">"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
+
+                <h5>1914 translation by H. Rackham</h5>
+                <p class="left-start">"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."</p>
+
+                <div class="clear">
+                    <hr>
+                </div><br>
+                <div >
+                    <a class="none" href="mailTo:help@lipsum.com">help@lipsum.com</a> <br>
+                    <a class="none" href="https://www.lipsum.com/privacy.pdf" target="_b">Privacy Policy</a>
+                </div>
+            </div>
+            
         </div>
+
+      
     </section>
 
 
