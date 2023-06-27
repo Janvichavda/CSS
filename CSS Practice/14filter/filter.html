@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+    <style>
+        .imgblur {
+            filter: blur(10px);
+        }
+
+        .brightness {
+            filter: brightness(2);
+        }
+
+        .contrast {
+            filter: contrast(200%);
+        }
+
+        .shadow {
+            filter: drop-shadow(10px 10px 40px red);
+
+        }
+
+        .grayscale {
+            filter: grayscale(300%);
+        }
+
+        .multiple {
+            filter: blur(10px);
+        }
+
+        .multiple:hover {
+
+            filter: drop-shadow(5px 5px red) drop-shadow(2px 2px 2px blue);
+        }
+
+        .
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        /* &lt;filter-function&gt; values */
+        <li> filter: blur(5px);</li>
+        <li> filter: brightness(0.4);</li>
+        <li> filter: contrast(200%);</li>
+        <li> filter: drop-shadow(16px 16px 20px blue);</li>
+        <li> filter: grayscale(50%);</li>
+        <li> filter: hue-rotate(90deg);</li>
+        <li> filter: invert(75%);</li>
+        <li> filter: opacity(25%);</li>
+        <li> filter: saturate(30%);</li>
+        <li> filter: sepia(60%);</li>
+
+        <li> /* URL */</li>
+        <li> filter: url("filters.svg#filter-id");</li>
+
+        <li> /* Multiple filters */</li>
+        <li> filter: contrast(175%) brightness(3%);</li>
+        <li> filter: drop-shadow(3px 3px red) sepia(100%) drop-shadow(-3px -3px blue);</li>
+
+        <li> /* Use no filter */</li>
+        <li> filter: none;</li>
+
+        <li> /* Global values */</li>
+        <li> filter: inherit;</li>
+        <li> filter: initial;</li>
+        <li> filter: revert;</li>
+        <li> filter: revert-layer;</li>
+        <li> filter: unset;</li>
+    </ul>
+
+    <div>ImageBlur<img class="imgblur" src="../Images/1.jpg"></div>
+    <div>Brightness<img class="brightness" src="../Images/2.jpg"></div>
+    <div>Contrast<img class="contrast" src="../Images/3.jpg"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div>Shadow<img class="shadow" src="../Images/4.jpg"></div>
+    <div>GrayScale<img class="grayscale" src="../Images/5.jpg"></div>
+    <div><img class="multiple" src="../Images/6.jpg"></div>
+    <div><img src="../Images/7.jpg"></div>
+
+</body>
+
+</html>
