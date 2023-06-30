@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        table,
+        td {
+            border: 1px solid;
+        }
+
+        .center {
+            width: 30%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .center1 {
+            text-align: center;
+            /* text-indent: 0px; */
+        }
+
+        .big {
+            padding: 40px;
+            background-color: rgb(192, 230, 226);
+        }
+
+        .high {
+            padding: 40px 20px 40px 20px;
+        }
+
+        .high1 {
+            padding: 10px;
+        }
+
+        .pink {
+            background-color: rgb(229, 192, 204);
+        }
+
+        .peach {
+            background-color: rgb(249, 228, 209);
+        }
+
+        .purple {
+            background-color: rgb(134, 115, 134);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center1">Table with column and row spanned:</div>
+    <div class="center">
+
+        <table>
+            <tr>
+                <td class="high1 pink">Logo </td>
+                <td colspan="3" class="high1 peach">Top Menu</td>
+
+            </tr>
+            <tr>
+                <td rowspan="2" class="high peach">Side Menu</td>
+                <td class="big">World News</td>
+                <td class="big">Financial</td>
+                <td rowspan="2" class="high pink">List of Ads</td>
+            </tr>
+            <tr>
+
+                <td class="big">Technology</td>
+                <td class="big">Sports</td>
+
+            </tr>
+            <tr>
+                <td colspan="4" class="high1 purple">Footer</td>
+
+            </tr>
+
+        </table>
+    </div>
+</body>
+
+</html>

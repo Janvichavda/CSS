@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        td {
+            border: 1px solid black;
+            padding: 20px;
+        }
+
+        table,
+        td {
+            border-collapse: collapse;
+            width: 800px;
+
+        }
+
+        .roman {
+            /* font-family: 'Times New Roman', Times, serif; */
+            color: rgb(198, 25, 54);
+
+        }
+
+        .roman td {
+            padding: 7px;
+        }
+
+
+        .green {
+            background-color: aquamarine;
+        }
+
+        .blue {
+            background-color: teal;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .darkg {
+            color: green;
+        }
+
+        .center {
+            text-align: center;
+            display: block;
+            margin: 0 auto;
+            width: 1000px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <table>
+            <tr class="roman">
+                <td>I</td>
+                <td>II</td>
+                <td>III</td>
+                <td>IV</td>
+                <td>V</td>
+                <td>VI</td>
+                <td>VII</td>
+            </tr>
+            <tr>
+                <td class="green">H</td>
+                <td colspan="5" class="darkg">Periodic Table of Elements</td>
+
+                <td class="yellow">He</td>
+            </tr>
+            <tr class="three">
+                <td class="green">Li</td>
+                <td class="blue">Be</td>
+                <td rowspan="2"></td>
+                <td rowspan="2"></td>
+                <td rowspan="2"></td>
+                <td>B</td>
+                <td class="yellow">Ne</td>
+            </tr>
+            <tr class="four">
+                <td class="green">Na</td>
+                <td class="blue">Mg</td>
+                <!-- <td></td> -->
+                <!-- <td></td> -->
+                <!-- <td></td> -->
+                <td>Al</td>
+                <td class="yellow">Ar</td>
+            </tr>
+
+            <tr>
+                <td class="green">K</td>
+                <td class="blue">Ca</td>
+                <td>Sc</td>
+                <td>Ti</td>
+                <td>V</td>
+                <td>Ga</td>
+                <td class="yellow">Kr</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
+
+1. how to bring this table to center.
+2. why is empty cell not working.
