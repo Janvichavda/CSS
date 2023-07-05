@@ -1,0 +1,121 @@
+.row {
+    /* border: 10px solid red; */
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1500px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify {
+    justify-content: space-between;
+}
+
+.align {
+    align-items: center;
+}
+
+
+
+
+header {
+    background-color: black;
+    color: white;
+    padding: 8px;
+}
+
+
+
+.logo a img {
+    margin-left: 2px;
+    height: 35px;
+    width: 120px;
+}
+
+.location {
+    margin-left: 20px;
+    font-size: 12px;
+}
+
+.location i {
+
+    margin: 3px;
+}
+
+.location p {
+    margin-left: 23px;
+}
+
+.flag img {
+    width: 20px;
+    height: 15px;
+}
+
+.all {
+    margin-right: 30px;
+}
+
+
+.all select {
+    width: 50px;
+    background-color: rgb(188, 188, 194);
+}
+
+select:hover {
+    background-color: rgb(171, 171, 188);
+}
+
+.all input {
+    width: 700px;
+    height: 40px;
+}
+
+.all button {
+    background-color: rgb(198, 107, 28);
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+
+}
+
+
+.flag,
+.signin,
+.returns,
+.cart {
+    padding: 8px;
+    font-size: 15px;
+    margin-right: 1px;
+}
+
+.flag {
+    margin-top: 15px;
+}
+
+.cart {
+    font-size: 15px;
+    margin-top: 10px;
+
+}
+
+.cart button {
+    font-size: 20px;
+    margin-right: 5px;
+}

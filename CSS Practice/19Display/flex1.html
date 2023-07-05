@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            border: 1px solid;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        dt {
+            text-align: center;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .flex-direction-row {
+            flex-direction: row;
+        }
+
+        .flex-direction-row-reverse {
+            flex-direction: row-reverse;
+        }
+
+        .flex-direction-column {
+            flex-direction: column;
+        }
+
+        .flex-direction-column-reverse {
+            flex-direction: column-reverse;
+        }
+
+        .flex-nowrap {
+            flex-wrap: nowrap;
+        }
+
+        .col-25 {
+            width: 25%;
+        }
+
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+
+        .flex-wrap-reverse {
+            flex-wrap: wrap-reverse;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="center">Dispay Flex</h1>
+    <dl>
+        <dt>Ordering & Orientation</dt>
+        <dd>
+            <ol>
+                <li>flex-direction</li>
+                <li>flex-wrap</li>
+                <li>flex-flow</li>
+                <li>order</li>
+            </ol>
+        </dd>
+        <dt>Alignment</dt>
+        <dd>
+            <ol>
+                <li>justify-content</li>
+                <li> align-items, align-self</li>
+                <li> align-content </li>
+            </ol>
+        </dd>
+        <dt>Flexibility</dt>
+        <dd>
+            <ol>
+                <li>flex-grow</li>
+                <li> flex-shrink</li>
+                <li>flex-basis </li>
+            </ol>
+        </dd>
+    </dl>
+
+
+    <br>
+    <p align="center">Flex-Direction</p>
+    <h3>flex-direction-row</h3>
+    <div class="row flex-direction-row">
+        <div class="col">col</div>
+        <div class="col">co2</div>
+        <div class="col">co3</div>
+        <div class="col">co4</div>
+    </div>
+    <h3>flex-direction-row-reverse</h3>
+    <div class="row flex-direction-row-reverse">
+        <div class="col">col</div>
+        <div class="col">co2</div>
+        <div class="col">co3</div>
+        <div class="col">co4</div>
+    </div>
+    <h3>flex-direction-column</h3>
+    <div class="row flex-direction-column">
+        <div class="col">col</div>
+        <div class="col">co2</div>
+        <div class="col">co3</div>
+        <div class="col">co4</div>
+    </div>
+    <h3>flex-direction-column-reverse</h3>
+    <div class="row flex-direction-column-reverse">
+        <div class="col">col</div>
+        <div class="col">co2</div>
+        <div class="col">co3</div>
+        <div class="col">co4</div>
+    </div>
+    <p align="center">Flex-Wrap</p>
+    <h3>Flex nowrap</h3>
+    <div class="row flex-nowrap">
+        <div class="col-25">col</div>
+        <div class="col-25">col2</div>
+        <div class="col-25">col3</div>
+        <div class="col-25">col4</div>
+        <div class="col-25">col5</div>
+        <div class="col-25">col</div>
+        <div class="col-25">col2</div>
+        <div class="col-25">col3</div>
+        <div class="col-25">col4</div>
+        <div class="col-25">col5</div>
+        <div class="col-25">col</div>
+        <div class="col-25">col2</div>
+        <div class="col-25">col3</div>
+        <div class="col-25">col4</div>
+        <div class="col-25">col5</div>
+        <div class="col-25">col</div>
+        <div class="col-25">col2</div>
+        <div class="col-25">col3</div>
+        <div class="col-25">col4</div>
+        <div class="col-25">col5</div>
+        <div class="col-25">col</div>
+        <div class="col-25">col2</div>
+        <div class="col-25">col3</div>
+        <div class="col-25">col4</div>
+        <div class="col-25">col5</div>
+        <div class="col-25">col5</div>
+        <div class="col-25">col</div>
+        <div class="col-25">col2</div>
+        <div class="col-25">col3</div>
+        <div class="col-25">col4</div>
+        <div class="col-25">col5</div>
+        <div class="col-25">col5</div>
+        <div class="col-25">col</div>
+        <div class="col-25">col2</div>
+        <div class="col-25">col3</div>
+        <div class="col-25">col4</div>
+        <div class="col-25">col5</div>
+        <div class="col-25">col5</div>
+        <div class="col-25">col</div>
+        <div class="col-25">col2</div>
+        <div class="col-25">col3</div>
+        <div class="col-25">col4</div>
+        <div class="col-25">col5</div>
+        <div class="col-25">col5</div>
+
+    </div>
+    <h3>Flex wrap</h3>
+    <div class="row flex-wrap">
+        <div class="col-25">col1</div>
+        <div class="col-25">col2</div>
+        <div class="col-25">col3</div>
+        <div class="col-25">col4</div>
+        <div class="col-25">col5</div>
+        <div class="col-25">col1</div>
+        <div class="col-25">col2</div>
+        <div class="col-25">col3</div>
+        <div class="col-25">col4</div>
+        <div class="col-25">col5</div>
+        <div class="col-25">col1</div>
+        <div class="col-25">col2</div>
+        <div class="col-25">col3</div>
+        <div class="col-25">col4</div>
+        <div class="col-25">col5</div>
+        <div class="col-25">col1</div>
+        <div class="col-25">col2</div>
+        <div class="col-25">col3</div>
+        <div class="col-25">col4</div>
+        <div class="col-25">col5</div>
+        <div class="col-25">col1</div>
+        <div class="col-25">col2</div>
+        <div class="col-25">col3</div>
+        <div class="col-25">col4</div>
+        <div class="col-25">col5</div>
+        <div class="col-25">col1</div>
+        <div class="col-25">col2</div>
+        <div class="col-25">col3</div>
+        <div class="col-25">col4</div>
+        <div class="col-25">col5</div>
+        <div class="col-25">col1</div>
+        <div class="col-25">col2</div>
+        <div class="col-25">col3</div>
+        <div class="col-25">col4</div>
+        <div class="col-25">col5</div>
+    </div>
+
+    <h3>Flex Wrap-Reverse</h3>
+    <div class="row flex-wrap-reverse">
+        <div class="col-25">col1</div>
+        <div class="col-25">col2</div>
+        <div class="col-25">col3</div>
+        <div class="col-25">col4</div>
+        <div class="col-25">col5</div>
+        <div class="col-25">col6</div>
+        <div class="col-25">col7</div>
+        <div class="col-25">col8</div>
+        <div class="col-25">col9</div>
+        <div class="col-25">col10</div>
+        <div class="col-25">col11</div>
+        <div class="col-25">col12</div>
+        <div class="col-25">col13</div>
+        <div class="col-25">col14</div>
+        <div class="col-25">col15</div>
+        <div class="col-25">col16</div>
+        <div class="col-25">col17</div>
+        <div class="col-25">col18</div>
+        <div class="col-25">col19</div>
+        <div class="col-25">col20</div>
+    </div>
+    <style>
+        .flex-flow-column {
+            flex-flow: column;
+        }
+
+        .flex-flow-column-reverse {
+            flex-flow: column-reverse;
+        }
+
+        .flex-flow-row {
+            flex-flow: row;
+        }
+
+        .flex-flow-row-reverse {
+            flex-flow: row-reverse;
+        }
+
+        .flex-flow-wrap {
+            flex-flow: wrap;
+        }
+
+        .flex-flow-wrap-reverse {
+            flex-flow: wrap-reverse;
+        }
+    </style>
+    <p align="center">Flex-Flow (shorthand for Flex-Direction and Flex-Wrap)</p>
+    <h3>flex-flow-column</h3>
+    <div class="row flex-flow-column">
+        <div class="col-25">col1</div>
+        <div class="col-25">col2</div>
+        <div class="col-25">col3</div>
+        <div class="col-25">col4</div>
+        <div class="col-25">col5</div>
+    </div>
+    <h3>flex-flow-column-reverse</h3>
+    <div class="row flex-flow-column-reverse">
+        <div class="col-25">col1</div>
+        <div class="col-25">col2</div>
+        <div class="col-25">col3</div>
+        <div class="col-25">col4</div>
+        <div class="col-25">col5</div>
+    </div>
+    <h3>flex-flow-row</h3>
+    <div class="row flex-flow-row">
+        <div class="col-25">col1</div>
+        <div class="col-25">col2</div>
+        <div class="col-25">col3</div>
+        <div class="col-25">col4</div>
+        <div class="col-25">col5</div>
+        <div class="col-25">col1</div>
+        <div class="col-25">col2</div>
+        <div class="col-25">col3</div>
+        <div class="col-25">col4</div>
+        <div class="col-25">col5</div>
+        <div class="col-25">col1</div>
+        <div class="col-25">col2</div>
+        <div class="col-25">col3</div>
+        <div class="col-25">col4</div>
+        <div class="col-25">col5</div>
+        <div class="col-25">col1</div>
+        <div class="col-25">col2</div>
+        <div class="col-25">col3</div>
+        <div class="col-25">col4</div>
+        <div class="col-25">col5</div>
+    </div>
+    <h3>flex-flow-row-reverse</h3>
+    <div class="row flex-flow-row-reverse">
+        <div class="col-25">col1</div>
+        <div class="col-25">col2</div>
+        <div class="col-25">col3</div>
+        <div class="col-25">col4</div>
+        <div class="col-25">col5</div>
+    </div>
+    <h3>flex-flow-wrap</h3>
+    <div class="row flex-flow-wrap">
+        <div class="col-25">col1</div>
+        <div class="col-25">col2</div>
+        <div class="col-25">col3</div>
+        <div class="col-25">col4</div>
+        <div class="col-25">col5</div>
+    </div>
+    <h3>flex-flow-wrap-reverse</h3>
+    <div class="row flex-flow-wrap-reverse">
+        <div class="col-25">col1</div>
+        <div class="col-25">col2</div>
+        <div class="col-25">col3</div>
+        <div class="col-25">col4</div>
+        <div class="col-25">col5</div>
+    </div>
+    <style>
+        .order1 {
+            order: 1;
+        }
+
+        .order-1 {
+            order: -1;
+        }
+
+        .order0 {
+            order: 0;
+        }
+    </style>
+    <p align="center">Order</p>
+    <h3>Order 1</h3>
+    <div class="row ">
+        <div class="col-25">col1</div>
+        <div class="col-25">col2</div>
+        <div class="col-25 order1">col3</div>
+        <div class="col-25">col4</div>
+        <div class="col-25">col5</div>
+    </div>
+
+    <h3>Order 0</h3>
+    <div class="row ">
+        <div class="col-25">col1</div>
+        <div class="col-25">col2</div>
+        <div class="col-25 order0">col3</div>
+        <div class="col-25">col4</div>
+        <div class="col-25">col5</div>
+    </div>
+
+    <h3>Order -1</h3>
+    <div class="row ">
+        <div class="col-25">col1</div>
+        <div class="col-25">col2</div>
+        <div class="col-25 order-1">col3</div>
+        <div class="col-25">col4</div>
+        <div class="col-25">col5</div>
+    </div>
+
+    <style>
+        .justify-content-baseline {
+            justify-content: baseline;
+            height: 100px;
+        }
+
+        .justify-content-center {
+            justify-content: center;
+        }
+
+        .justify-content-end {
+            justify-content: end;
+        }
+
+        .justify-content-start {
+            justify-content: start;
+        }
+
+        .justify-content-space-around {
+            justify-content: space-around;
+        }
+
+        .justify-content-space-between {
+            justify-content: space-between;
+        }
+
+        .justify-content-space-evenly {
+            justify-content: space-evenly;
+        }
+    </style>
+
+    <h2>Alignment</h2>
+    <h3>justify-content</h3>
+    <h3>justify-content-baseline</h3>
+    <div class="row justify-content-baseline ">
+        <div class="col">col1</div>
+        <div class="col">col2</div>
+        <div class="col">col3</div>
+        <div class="col">col4</div>
+        <div class="col">col5</div>
+    </div>
+    <h3>justify-content-center</h3>
+    <div class="row justify-content-center">
+        <div class="col">col1</div>
+        <div class="col">col2</div>
+        <div class="col">col3</div>
+        <div class="col">col4</div>
+        <div class="col">col5</div>
+    </div>
+    <h3>justify-content-end</h3>
+    <div class="row justify-content-end ">
+        <div class="col">col1</div>
+        <div class="col">col2</div>
+        <div class="col">col3</div>
+        <div class="col">col4</div>
+        <div class="col">col5</div>
+    </div>
+    <h3>justify-content-start</h3>
+    <div class="row justify-content-start">
+        <div class="col">col1</div>
+        <div class="col">col2</div>
+        <div class="col">col3</div>
+        <div class="col">col4</div>
+        <div class="col">col5</div>
+    </div>
+    <h3>justify-content-space-around</h3>
+    <div class="row justify-content-space-around">
+        <div class="col">col1</div>
+        <div class="col">col2</div>
+        <div class="col">col3</div>
+        <div class="col">col4</div>
+        <div class="col">col5</div>
+    </div>
+    <h3>justify-content-space-between</h3>
+    <div class="row justify-content-space-between">
+        <div class="col">col1</div>
+        <div class="col">col2</div>
+        <div class="col">col3</div>
+        <div class="col">col4</div>
+        <div class="col">col5</div>
+    </div>
+    <h3>justify-content-space-evenly</h3>
+    <div class="row justify-content-space-evenly">
+        <div class="col">col1</div>
+        <div class="col">col2</div>
+        <div class="col">col3</div>
+        <div class="col">col4</div>
+        <div class="col">col5</div>
+    </div>
+
+    <style>
+        .child--featured {
+            flex-grow: 1;
+        }
+    </style>
+
+    <h2>Flexibility</h2>
+    <h3>Flex-grow</h3>
+    <div class="row">
+        <div class="col ">col1</div>
+        <div class="col ">col2</div>
+        <div class="col  child--featured">col3</div>
+        <div class="col ">col4</div>
+        <div class="col ">col5</div>
+    </div>
+
+    <style>
+        .child {
+            width: 45%;
+        }
+
+        .child--featured-shrink {
+            flex-shrink: 0;
+        }
+    </style>
+    <h3>Flex-shrink</h3>
+    <div class="row">
+        <div class="col child ">Col1</div>
+        <div class=" child col">Col2</div>
+        <div class="col child child--featured-shrink">Col3</div>
+        <div class="col child ">Col4</div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

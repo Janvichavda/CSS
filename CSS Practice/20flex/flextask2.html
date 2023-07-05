@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexTask2</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .orange {
+            border: 2px solid orange;
+            width: 300px;
+            text-align: center;
+
+
+        }
+
+        .row {
+            display: flex;
+            font-size: 8px;
+        }
+
+        
+
+        .flex-direction-row {
+            flex-direction: row;
+        }
+
+
+
+        .col {
+            margin: 5px;
+        }
+
+
+
+        .col-a {
+            height: 70px;
+            width: 150px;
+            background-color: purple;
+            padding-top: 25px;
+        }
+
+        .col3 {
+            width: 150px;
+            height: 110px;
+            background-color: orange;
+            margin: 3px;
+            padding-top: 45px;
+
+        }
+
+        .col4,
+        .col5 {
+            background-color: blue;
+            width: 150px;
+            height: 50px;
+            padding-top: 14px;
+        }
+
+        .col-d {
+            background-color: pink;
+            height: 50px;
+            width: 100px;
+            margin: 3px;
+            padding-top: 15px;
+        }
+
+        .col-c {
+
+            width: 140px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="orange justify-content">
+
+        <div class="row flex-direction-column ">
+            <div class="col-a col1 col">Menu1</div>
+            <div class="col-a col2 col">Menu2</div>
+        </div>
+
+        <div class="row flex-direction-row">
+            <div class="col-b col3 ">Menu3</div>
+
+            <div>
+                <div class="col-c col4 col">Menu4</div>
+                <div class="col-c col5 col">Menu5</div>
+            </div>
+        </div>
+
+
+        <div class="row flex-direction-row">
+            <div class="col-d col6">Menu6</div>
+            <div class="col-d col7">Menu7</div>
+            <div class="col-d col7">Menu8</div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

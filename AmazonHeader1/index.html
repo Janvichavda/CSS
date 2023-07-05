@@ -4,38 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AmazonHeader</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="AmazonHeader.css">
 </head>
 
 <body>
     <header>
         <div class="container">
-            <div class="row justify align ">
-                <div class="col">
-                    <div class="row align">
+            <div class="row justify align">
+                <div class="col1">
+                    <div class="row">
+
+
                         <div class="logo">
-                            <img src="../AmazonHeader/logo.jpeg" alt="">
+                            <a><img src="use.png"></a>
                         </div>
-                        <div class=" hello_text ">
-
-                            <h4>hello</h4>
-                            <h3> <i class=" fa-solid fa-location-dot"></i>select your address</h3>
-
+                        <div class="location">
+                            <p class="row1">Hello</p>
+                            <h3 class="row2"><i class="fa-solid fa-location-dot"></i>Select your address</h3>
                         </div>
 
                     </div>
                 </div>
+
+
                 <div class="col">
-                    <div class="search row">
+                    <div class="row all ">
                         <select aria-describedby="searchDropdownDescription"
                             class="nav-search-dropdown searchSelect nav-progressive-attrubute nav-progressive-search-dropdown"
                             data-nav-digest="sHs7pZ33gnIMVNqHYtCub4U/oHw=" data-nav-selected="0" id="searchDropdownBox"
                             name="url" style="display: block; top: 2.5px;" tabindex="0" title="Search in">
-                            <option selected="selected" value="search-alias=aps">All Categories</option>
+                            <option selected="selected" value="all">All</option>
+                            <option value="search-alias=aps">All Categories</option>
                             <option value="search-alias=alexa-skills">Alexa Skills</option>
                             <option value="search-alias=amazon-devices">Amazon Devices</option>
                             <option value="search-alias=fashion">Amazon Fashion</option>
@@ -79,20 +82,32 @@
                             <option value="search-alias=watches">Watches</option>
                         </select>
 
-                        <input type="text" placeholder="search amzon.in">
+                        <input type="text" placeholder="Search Amazon.in">
 
                         <button><i class="fa-solid fa-magnifying-glass"></i></button>
+
                     </div>
                 </div>
-                <div class="col">
-                    <div class="list">
-                        <ul>
-                            <li><a href="#">home</a></li>
-                            <li><a href="#">about</a></li>
-                            <li><a href="#">help</a></li>
-                            <li><a href="#">contact</a></li>
-                            <li><a href="#">search</a></li>
-                        </ul>
+
+                <div class="col3">
+                    <div class="row">
+                        <div class="flag">
+
+                            <img src="../AmazonHeader1/flag.png" alt="">
+                            EN
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                        <div class="signin">
+                            <p>Hello,sign in</p>
+                            <h3>Account & Lists <i class="fa-solid fa-caret-down"></i></h3>
+                        </div>
+                        <div class="returns">
+                            <p>Returns</p>
+                            <h3>& Orders</h3>
+                        </div>
+                        <div class="cart">
+                            <button> <i class="fa-solid fa-cart-shopping"></i> </button>Cart
+                        </div>
                     </div>
                 </div>
 

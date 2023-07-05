@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexTask3</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+
+        .row {
+            display: flex;
+            width: 1200px;
+            height: 100px;
+            background-color: grey;
+        }
+
+        .flex-direction-row {
+            flex-direction: row;
+        }
+        
+
+        .col {
+            background-color: green;
+            border: 1px solid black;
+        }
+
+        .col1 {
+            height: 100px;
+            width: 40px;
+        }
+
+        .col2 {
+            height: 40px;
+            width: 40px;
+        }
+
+         .col3 {
+            height: 35px;
+            width: 45px;
+            margin-top: 65px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row flex-direction-row ">
+        <div class="col col1 ">one</div>
+        <div class="col col2 ">Two</div>
+        <div class="col col3 ">Three</div>
+    </div>
+
+</body>
+
+</html>
