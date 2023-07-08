@@ -1,15 +1,21 @@
 * {
-    border: 1px solid;
+    /* border: 1px solid; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+.container {
+    width: 700px;
+    margin: 0 auto;
+}
+
 .wrapper {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    /* gap: 5px; */
+    gap: 5px;
     grid-auto-rows: minmax(100px, auto);
+    margin-top: 100px;
 
 }
 
@@ -19,6 +25,8 @@ img {
     height: 100%;
     display: block;
 }
+
+
 
 .one {
 
