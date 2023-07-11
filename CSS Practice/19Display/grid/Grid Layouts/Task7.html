@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task7</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+
+        #page {
+
+            width: 50%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-rows: 80px 300px 80px 80px;
+            grid-template-columns: 150px 600px;
+            grid-template-areas:
+                "Nav  Header"
+                "Nav Article"
+                "Nav Ads"
+                "Nav Footer"
+            ;
+            box-shadow: 3px 3px 3px 3px grey;
+        }
+
+        .col1,
+        .col2,
+        .col3,
+        .col4,
+        .col5 {
+            background-color: #5164f4;
+            margin: 5px;
+            padding: 10px;
+        }
+
+
+        .col1 {
+            grid-area: Header;
+        }
+
+        .col2 {
+            grid-area: Nav;
+        }
+
+        .col3 {
+            grid-area: Article;
+        }
+
+        .col4 {
+            grid-area: Ads;
+        }
+
+        .col5 {
+            grid-area: Footer;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="page">
+        <header class="col1">Header</header>
+        <nav class="col2">Nav</nav>
+        <main class="col3">Article</main>
+        <div class="col4">Ads</div>
+        <footer class="col5">Footer</footer>
+
+    </section>
+</body>
+
+</html>
