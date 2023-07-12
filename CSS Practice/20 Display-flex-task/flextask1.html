@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexTask1</title>
+    <style>
+        .row {
+            display: flex;
+            margin: 4px;
+        }
+
+        .flex-direction-row {
+            flex-direction: row;
+        }
+
+        .col {
+            border: 3px solid black;
+            /* text-align: center; */
+            font-size: 7px;
+        }
+
+        .col1,
+        .col2,
+        .col3 {
+
+            background-color: rgb(151, 151, 249);
+            height: 125px;
+            margin: 2px;
+        }
+
+        .col1 {
+            width: 150px;
+        }
+
+        .col2 {
+            width: 70px;
+        }
+
+        .col3 {
+            width: 700px;
+        }
+
+        .col4,
+        .col5,
+        .col6 {
+            height: 20px;
+
+        }
+
+        /* .justify-content-center {
+            justify-content: center;
+        } */
+
+        .col4,
+        .col6 {
+            background-color: aqua;
+        }
+
+        .col4 {
+
+            width: 400px;
+        }
+
+        .col5 {
+            background-color: peachpuff;
+            width: 250px;
+        }
+
+        .col6 {
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row flex-direction-row justify-content-center">
+        <div class="col col1">Confused</div>
+        <div class="col col2">Happy</div>
+        <div class="col col3">Sad</div>
+    </div>
+
+    <div class="row flex-direction-row justify-content-center">
+        <div class="col col4">Warm</div>
+        <div class="col col5">Cool</div>
+        <div class="col col6">Host</div>
+    </div>
+</body>
+
+</html>

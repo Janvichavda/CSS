@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexTask5</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            /* border: 5px solid black; */
+        }
+
+        .brown {
+            background-color: rgb(246, 193, 147);
+            height: 300px;
+            width: 100%;
+            border-radius: 5px;
+            /* border: 5px solid red; */
+            margin: 200px auto;
+            padding: 5px;
+        }
+
+        .row-100 {
+            background-color: rgb(249, 223, 153);
+            height: 90px;
+            /* width: 1500px; */
+            margin: 5px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: row;
+            /* border: 10px solid blue; */
+        }
+
+        .col1 {
+            height: 70px;
+            width: 100px;
+            background-color: rgb(136, 235, 235);
+            margin: 5px;
+            border-radius: 5px;
+            display: flex;
+        }
+
+        .col2 {
+            height: 70px;
+            width: 200px;
+            background-color: rgb(149, 231, 231);
+            margin: 5px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .row1 {
+            background-color: pink;
+            margin: 5px;
+            border-radius: 5px;
+            align-self: flex-end;
+            height: 20px;
+            width: 90px;
+
+        }
+
+        .col1-1 {
+            background-color: pink;
+            flex-direction: column;
+            margin: 5px;
+            width: 30px;
+            border-radius: 5px;
+        }
+
+        .col1-2 {
+            background-color: pink;
+            margin: 5px;
+            width: 10px;
+            border-radius: 5px;
+        }
+
+        .col1-3 {
+            background-color: pink;
+            margin: 5px;
+            width: 10px;
+            border-radius: 5px;
+        }
+
+        .dot {
+            height: 20px;
+            width: 20px;
+            background-color: rgb(145, 232, 232);
+            margin: 5px;
+            border-radius: 5px;
+
+        }
+
+
+        .row-200 {
+            background-color: rgb(249, 223, 153);
+            height: 180px;
+            /* width: 1500px; */
+            margin: 10px;
+            border-radius: 10px;
+            /* border: 10px solid blueviolet; */
+            display: flex;
+            justify-content: center;
+        }
+
+        .cola {
+            height: 170px;
+            width: 100px;
+            margin: 5px;
+            border-radius: 5px;
+            background-color: rgb(160, 238, 238);
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+
+        .colb {
+            height: 170px;
+            width: 300px;
+            margin: 5px;
+            border-radius: 5px;
+            background-color: rgb(160, 238, 238);
+            display: flex;
+        }
+
+        .rowa {
+            height: 20px;
+            width: 90px;
+            margin: 5px;
+            border-radius: 5px;
+            background-color: pink;
+        }
+
+        .rowb {
+            height: 80px;
+            width: 90px;
+            margin: 5px;
+            border-radius: 5px;
+            background-color: pink;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .rowc,
+        .rowd {
+            height: 15px;
+            width: 80px;
+            margin: 5px;
+            border-radius: 5px;
+            background-color: rgb(130, 223, 223);
+        }
+
+        .rowa1 {
+            height: 100px;
+            width: 290px;
+            margin: 5px;
+            border-radius: 5px;
+            background-color: pink;
+            align-self: flex-end;
+        }
+
+        .colx {
+            height: 90px;
+            width: 60px;
+            margin: 5px;
+            border-radius: 5px;
+            background-color: rgb(137, 230, 230);
+            display: flex;
+        }
+
+        .rowx {
+            height: 20px;
+            width: 80px;
+            margin: 5px;
+            border-radius: 5px;
+            background-color: pink;
+            align-self: flex-start;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="brown">
+        <div class="row-100">
+            <div class="col1">
+                <div class="row1"></div>
+            </div>
+
+            <div class="col2">
+                <div class="col1-1">
+                    <div class="dot"></div>
+                </div>
+                <div class="col1-2"></div>
+                <div class="col1-3"></div>
+            </div>
+        </div>
+
+        <div class="row-200">
+            <div class="cola">
+                <div class="rowa"></div>
+                <div class="rowb">
+                    <div class="rowc"></div>
+                    <div class="rowd"></div>
+                </div>
+            </div>
+            <div class="colb">
+                <div class="rowa1">
+                    <div class="colx">
+                        <div class="rowx"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
