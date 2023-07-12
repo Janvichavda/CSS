@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-span5col {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 10px;
+            align-items: start;
+            justify-items: center;
+        }
+
+        .grid-span5col img {
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+            max-width: 100%;
+        }
+
+
+        .grid-span5col img:nth-child(6) {
+            grid-column: span 5;
+        }
+
+        .landscape {
+            width: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-span5col">
+        <img src="spanimages/1.jpeg" alt="">
+        <img src="spanimages/2.jpeg" alt="">
+        <img src="spanimages/3.jpeg" alt="">
+        <img src="spanimages/4.jpeg" alt="">
+        <img src="spanimages/5.jpeg" alt="">
+        <img class="landscape" src="spanimages/landscape.jpeg" alt="">
+        <img src="spanimages/1.jpeg" alt="">
+        <img src="spanimages/2.jpeg" alt="">
+        <img src="spanimages/3.jpeg" alt="">
+        <img src="spanimages/4.jpeg" alt="">
+        <img src="spanimages/4.jpeg" alt="">
+
+
+    </div>
+</body>
+
+</html>

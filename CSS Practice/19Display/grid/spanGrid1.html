@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-span3col {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            grid-gap: 10px;
+            align-items: start;
+            justify-items: center;
+            margin: auto;
+            width: 540px;
+        }
+
+        .grid-span3col img {
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+            max-width: 100%;
+        }
+
+        .grid-span3col img:nth-child(2) {
+            grid-column: span 3;
+            grid-row: span 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-span3col">
+        <img src="spanimages/1.jpeg" alt="">
+        <img src="spanimages/2.jpeg" alt="">
+        <img src="spanimages/3.jpeg" alt="">
+        <img src="spanimages/4.jpeg" alt="">
+        <img src="spanimages/5.jpeg" alt="">
+        <img src="spanimages/6.jpeg" alt="">
+        <img src="spanimages/1.jpeg" alt="">
+        <img src="spanimages/2.jpeg" alt="">
+        <img src="spanimages/3.jpeg" alt="">
+        <img src="spanimages/4.jpeg" alt="">
+
+    </div>
+</body>
+
+</html>

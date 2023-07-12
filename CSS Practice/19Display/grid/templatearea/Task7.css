@@ -7,18 +7,19 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    background-color: black;
-
-
 }
 
 .container {
+    background-color: black;
+    height: 800px;
+    width: 100%;
     display: flex;
-    /* align-items: center; */
+
     justify-content: center;
     font-size: 70px;
-    margin-top: 30px;
-    /* justify-content: space-between; */
+
+
+
 }
 
 .container span {
@@ -34,15 +35,14 @@
     border-left: 7px solid blue;
     content: "";
     padding-left: 15px;
-    /* color: blue; */
-    /* width: 5px; */
+
 }
 
 .css::before {
     border-left: 7px solid blue;
     content: "";
     padding-left: 15px;
-    /* color: blue; */
+
 }
 
 .html,
