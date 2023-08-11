@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexTask1</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .row {
+            display: flex;
+            border: 2px solid black;
+        }
+
+        .flex-direction-row {
+            flex-direction: row;
+        }
+
+
+        .col1 .row div {
+            border: 2px solid black;
+            margin: 5px;
+        }
+
+        .hgt-clr {
+            background-color: rgb(89, 89, 201);
+        }
+
+        .clr {
+            background-color: aqua;
+        }
+
+        .peach {
+            background-color: rgb(224, 190, 160);
+        }
+
+        .col1 {
+            height: 100px;
+            width: 150px;
+        }
+
+        .col2 {
+            height: 100px;
+            width: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="row flex-direction-row">
+        <div class="row1 ">
+            <div class="hgt-clr col1">Confused</div>
+            <div class="hgt-clr col2">Happy</div>
+            <div class="hgt-clr col3">Sad</div>
+        </div>
+    </div>
+    <div>
+        <div class="row2">
+            <div class="clr col4">Warm</div>
+            <div class="peach col5">Cool</div>
+            <div class="clr col6">Hot</div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputbutton-overlap</title>
+    <style>
+        * {
+            background-color: blue;
+        }
+
+        .input-text {
+            outline: 1px solid white;
+            width: 40%;
+            margin: 0 auto;
+            border-radius: 20px;
+            display: flex;
+        }
+
+        input {
+            background-color: blue;
+            padding: 10px;
+            color: white;
+            width: 85%;
+            border: none;
+            outline: none;
+            border-radius: 20px;
+        }
+
+        ::placeholder {
+            color: white;
+        }
+
+        button {
+            border: none;
+            padding: 10px;
+            background-color: white;
+            color: blue;
+            border-radius: 20px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="input-text">
+        <input type="email" placeholder="Type your text here">
+        <button>Submit</button>
+    </div>
+</body>
+
+</html>

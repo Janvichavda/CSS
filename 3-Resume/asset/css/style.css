@@ -2,7 +2,14 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* border: 2px solid black; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
 }
 
 @font-face {
@@ -38,15 +45,14 @@
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -15px;
+    /* margin: 0 -15px; */
 }
 
 .row>* {
     width: 100%;
-    max-width: 100%;
-    padding: 0 15px;
+    /* max-width: 100%; */
+    /* padding: 0 15px; */
 }
-
 
 .justify {
     justify-content: space-between;
@@ -63,14 +69,15 @@
 .container {
     width: 100%;
     margin: 0 auto;
-    padding: 0 -15px;
-
+    /* padding: 0 15px; */
 }
-
-.container-fluid {}
 
 .menu ul li a {
     text-decoration: none;
+}
+
+.menu {
+    display: none;
 }
 
 img {
@@ -90,21 +97,13 @@ img {
     position: relative;
 }
 
-/* [class *=col] {
-    width: 100%;
-} */
-
-
 .menu {
     padding: 50px 0;
 }
 
-
 .menu ul li {
     display: inline-block;
 }
-
-
 
 .menu ul li a:hover {
     color: #000000;
@@ -119,13 +118,12 @@ img {
 }
 
 .header_img {
-
     filter: grayscale(20);
 }
 
 .header_text {
-    padding: 0 50px;
-    width: 50%;
+    padding: 0 20px;
+    width: 100%;
 }
 
 
@@ -201,8 +199,8 @@ img {
 }
 
 .sec-2-header h1 {
-    font-size: 78px;
-    width: 50%;
+    font-size: 29px;
+    width: 90%;
     margin: 0 auto;
     font-family: 'IBMbold';
 }
@@ -257,7 +255,6 @@ img {
     padding-left: 30px;
 }
 
-
 .sec2-text3 i {
     font-size: 50px;
     padding-top: 100px;
@@ -278,14 +275,24 @@ img {
 /* --section 3-- */
 
 .sec_3 {
-    filter: grayscale();
-    position: relative;
+    filter: grayscale(20);
+    background-image: url("../images/2.png");
+    height: 214vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+.sec3-img img {
+    width: 100%;
+}
+
+.sec3-img {
+    text-align: end;
 }
 
 .sec-3-text {
-    bottom: 100px;
     width: 44%;
-    right: 0;
+    margin-left: auto;
     font-family: 'IBMbold';
 }
 
@@ -295,12 +302,7 @@ img {
     right: 90px;
     font-size: 90px;
     color: white;
-
 }
-
-
-
-
 
 .sec-3-text button {
     color: white;
@@ -311,7 +313,6 @@ img {
     padding: 10px;
 }
 
-
 /* --section 4-- */
 .sec-4 {
     background-color: #ebe6fb;
@@ -319,6 +320,7 @@ img {
 }
 
 .sec-4-arrow {
+    display: none;
     padding-top: 136px;
 }
 
@@ -330,10 +332,10 @@ img {
 }
 
 .sec-4-box {
+    width: 90%;
     border: 1px solid #4012cb;
     text-align: center;
     padding: 60px;
-    width: 70%;
     margin: 0 auto;
 }
 
@@ -351,23 +353,22 @@ img {
     font-family: 'lato';
 }
 
-
 /* --section 5-- */
 .sec-5 {
     background-color: #4012cb;
 }
 
 .title h1 {
+    font-size: 30px;
     text-align: center;
-    font-size: 60px;
     color: white;
     font-family: 'IBMbold';
 }
 
 .sec5-text {
+    width: 100%;
     display: flex;
     outline: 1px solid #FFF;
-    width: 50%;
     margin: 0 auto;
     border-radius: 30px;
 }
@@ -409,7 +410,7 @@ img {
 }
 
 .sec-6-text p {
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
     text-align: justify;
     padding: 50px 0;
@@ -418,7 +419,7 @@ img {
 }
 
 .sec6-text-l {
-    font-size: 50px;
+    font-size: 20px;
     width: 70%;
     margin: 0 auto;
     font-family: 'IBMbold';
@@ -428,8 +429,6 @@ img {
 .sec6-text-r {
     padding: 50px 0;
 }
-
-
 
 .sec6-text-r {
     width: 80%;
@@ -452,24 +451,17 @@ img {
     font-family: 'IBM';
 }
 
-/* --section 8-- */
-
-.sec8 {
-    padding: 70px 0;
+.sec7 img {
+    filter: grayscale(20);
 }
+
+/* --section 8-- */
 
 .sec8-l,
 .sec8-h,
 .sec8-la {
     display: flex;
 }
-
-.sec8-p p {
-    font-family: 'IBM';
-    width: 50%;
-    border-bottom: 3px solid #551ad2;
-}
-
 
 .sec8-h {
     font-family: 'IBMbold';
@@ -495,28 +487,29 @@ img {
     background-color: black;
 }
 
+.sec8-img {
+    filter: grayscale(20);
+}
+
 .sec8-l {
+    width: 100%;
     font-family: 'IBM';
     border-top: 3px solid #551ad2;
     border-bottom: 3px solid #551ad2;
     margin: 10px 0;
     font-size: 13px;
     padding: 20px 30px;
-    width: 70%;
     justify-content: space-between;
-
 }
 
 .sec8-l button {
     border: none;
-
 }
 
 .sec8-la {
     font-family: 'IBM';
     font-size: 13px;
     justify-content: space-between;
-    width: 70%;
     padding: 20px 30px;
 }
 
@@ -531,7 +524,6 @@ img {
 .sec8-p p {
     font-size: 13px;
     padding: 20px 10px;
-    width: 70%;
     text-align: justify;
 }
 
@@ -557,11 +549,12 @@ img {
     font-family: 'IBM';
 }
 
-.sec9-t,
-.sec9-f,
-.sec9-i {
-    width: 50%;
-    margin: 0 auto;
+.border {
+    border-right: 0;
+}
+
+.sec9-t {
+    padding: 20px 0;
 }
 
 .sec9-t ul li {
@@ -570,6 +563,7 @@ img {
 
 .sec9-t ul li a {
     color: white;
+    border-bottom: 1px solid #FFFF;
 }
 
 .icon {
@@ -578,7 +572,6 @@ img {
 }
 
 .icon i {
-    /* display: flex; */
     text-align: end;
     background-color: white;
     font-size: 40px;
@@ -587,7 +580,7 @@ img {
 }
 
 .sec9-i h2 {
-    font-size: 50px;
+    font-size: 45px;
     padding: 30px 0;
     font-family: 'IBMbold';
 }
@@ -598,7 +591,7 @@ img {
 }
 
 .sec9-f h3 {
-    padding: 70px;
+    padding: 30px 0;
     font-size: 20px;
 }
 
@@ -645,10 +638,6 @@ img {
         font-weight: 700;
     }
 
-    .home {
-        padding: 100px 0;
-    }
-
     .sec-4-box button {
         background-color: #4012cb;
         font-size: 9px;
@@ -670,6 +659,10 @@ img {
         display: flex;
     }
 
+    .sec-2-header h1 {
+        font-size: 78px;
+        width: 90%;
+    }
 
     .header_text h1 {
         font-family: 'IBM';
@@ -698,7 +691,7 @@ img {
     .home {
         width: 80%;
         margin: 0 auto;
-        padding: 100px 0;
+        /* padding: 100px 0; */
     }
 
     .sec-4-box button {
@@ -709,20 +702,28 @@ img {
         border: none;
         color: white;
     }
-
-
-
-
-
-
 }
-
 
 @media (min-width: 992px) {
     .container {
         width: 960px;
     }
 
+    .sec-4-arrow {
+        display: block;
+    }
+
+    .sec-2-header h1 {
+        width: 70%;
+    }
+
+    .sec-4-box {
+        width: 70%;
+    }
+
+    .title h1 {
+        font-size: 60px;
+    }
 
     .col_30 {
         width: 30%;
@@ -730,6 +731,10 @@ img {
 
     .col_70 {
         width: 70%;
+    }
+
+    .col_80 {
+        width: 80%;
     }
 
     .col_1 {
@@ -752,16 +757,71 @@ img {
         width: 25%;
     }
 
+    .menu {
+        display: block;
+    }
 
+    .header_text {
+        padding: 0 30px;
+        width: 90%;
+    }
+
+    .border {
+        border-right: 2px solid #FFF;
+    }
+
+    .sec5-text {
+        width: 50%;
+    }
+
+    .sec-6-text p {
+        width: 70%;
+    }
+
+    .sec6-text-l {
+        font-size: 50px;
+    }
+
+    .sec8-la,
+    .sec8-l {
+        width: 70%;
+    }
+
+    .sec9-f h3 {
+        padding: 70px;
+    }
+
+    .sec9-i h2 {
+        font-size: 50px;
+    }
+
+    .sec8-p p {
+        width: 70%;
+    }
+
+    .sec8 {
+        padding: 70px 0;
+    }
 }
-
 
 @media (min-width: 1200px) {
     .container {
         width: 1140px;
     }
-}
 
+    .sec-2-header h1 {
+        width: 50%;
+    }
+
+    .header_text {
+        padding: 0 50px;
+        width: 50%;
+    }
+
+    .home {
+        padding: 100px 0;
+    }
+}
 
 @media (min-width: 1400px) {
     .container {
