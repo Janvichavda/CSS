@@ -45,13 +45,10 @@ a {
 .row {
     display: flex;
     flex-wrap: wrap;
-    /* margin: 0 -15px; */
 }
 
 .row>* {
     width: 100%;
-    /* max-width: 100%; */
-    /* padding: 0 15px; */
 }
 
 .justify {
@@ -277,7 +274,7 @@ img {
 .sec_3 {
     filter: grayscale(20);
     background-image: url("../images/2.png");
-    height: 214vh;
+    height: 150vh;
     display: flex;
     align-items: flex-end;
 }
@@ -491,6 +488,10 @@ img {
     filter: grayscale(20);
 }
 
+.se_8_text_icon h1 {
+    font-size: 40px;
+}
+
 .sec8-l {
     width: 100%;
     font-family: 'IBM';
@@ -691,7 +692,6 @@ img {
     .home {
         width: 80%;
         margin: 0 auto;
-        /* padding: 100px 0; */
     }
 
     .sec-4-box button {
@@ -702,12 +702,15 @@ img {
         border: none;
         color: white;
     }
+
+  
 }
 
 @media (min-width: 992px) {
     .container {
         width: 960px;
     }
+
 
     .sec-4-arrow {
         display: block;
