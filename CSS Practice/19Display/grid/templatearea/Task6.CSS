@@ -6,8 +6,6 @@
 
 .container {
 
-    /* width: 50%;
-    margin: 0 auto; */
 
     display: grid;
     grid-template-rows: 400px 200px 70px;
