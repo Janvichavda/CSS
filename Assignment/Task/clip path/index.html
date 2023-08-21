@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clip path</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            padding: 20px;
+        }
+
+        .container {
+
+            background-image: url(images/1.jpg);
+            width: 100%;
+            display: block;
+            background-repeat: no-repeat;
+            height: 110vh;
+            background-size: cover;
+            clip-path: polygon(0% 0%, 113% 0%, 198% 50%, 50% 100%, 0% 83%);
+        }
+
+        .navbar ul li {
+            display: inline-block;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .align {
+            align-items: center;
+        }
+
+        .col-40 {
+            width: 40%;
+            text-align: center;
+            padding: 20px 0;
+            color: white;
+        }
+
+        .col-60 {
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        .col-100 {
+            width: 100%;
+        }
+
+
+
+        a:hover {
+            color: red;
+            border-bottom: 2px solid red;
+        }
+
+        .justify {
+            justify-content: space-between;
+        }
+
+        .text {
+            padding: 100px 0;
+            text-align: center;
+            color: white;
+        }
+
+        .text h1 {
+            padding: 0 50px;
+        }
+
+        .text h4 {
+            width: 45%;
+            margin: 0 auto;
+            padding: 10px 0;
+        }
+
+        .text button {
+            margin: 20px 0;
+        }
+
+        .red {
+            background-color: brown;
+            color: white;
+            border: none;
+            padding: 10px;
+        }
+
+        .white {
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+            padding: 10px;
+        }
+
+        .slidder {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .slidder h1 {
+            padding: 30px;
+        }
+
+        .text button {
+            margin: 20px 0;
+        }
+
+        .slidder i {
+            margin: 30px;
+            padding: 10px;
+            color: black;
+            background-color: grey;
+        }
+
+        .slidder i:hover {
+            color: white;
+            background-color: red;
+        }
+
+        .anchor i {
+            border-radius: 50%;
+            position: relative;
+            left: 49%;
+            bottom: 22px;
+            color: red;
+            background-color: white;
+            padding: 10px;
+            box-shadow: 0px 0px 0px 10px rgba(128, 128, 128, 0.104);
+
+        }
+
+        .icons {
+            width: 30%;
+            text-align: center;
+        }
+
+        .icons i {
+            color: red;
+        }
+
+        .all {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin: 0 auto;
+            padding: 50px;
+            color: grey;
+        }
+
+        .icons h3 {
+            padding: 5px;
+        }
+
+        .icons .yo {
+            border: 1px solid black;
+            padding: 25px 0;
+            font-size: 20px;
+            width: 25%;
+            margin: 0 auto;
+        }
+
+        .icons .yuhu:hover {
+            transform: rotate(55deg);
+        }
+
+
+        .yo:hover {
+            border: 1px solid;
+        }
+
+        .main:hover {
+            color: red;
+        }
+
+        .yuhu {
+            padding: 10px;
+        }
+
+        .icons h4 {
+            font-size: 13px;
+            padding: 10px 0;
+        }
+
+        span {
+            padding: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row align">
+            <div class="col-40">
+                <h1 class="logo">Logo</h1>
+            </div>
+            <div class="col-60">
+                <div class="navbar">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">PORTFOLIO</a></li>
+                        <li><a href="#">PRICING</a></li>
+                        <li><a href="#">TEAM</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-100">
+                <div class="text">
+                    <h3>Our clients are our first priority</h3>
+                    <div class="slidder">
+                        <i class="fa-solid fa-arrow-left left"></i>
+                        <h1> WELCOME TO SKY</h1>
+                        <i class="fa-solid fa-arrow-right rit"></i>
+                    </div>
+                    <span>_______ . _______</span>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure vel alias velit eos quos
+                        voluptates
+                        dolore est veritatis sed, repellat sequi commodi temporibus tempora necessita tibus totam,
+                        labore
+                        consectetur explicabo itaque?</h4>
+                    <button class="red">GET STARTED NOW</button>
+                    <button class="white">LEARN MORE</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-100">
+            <div class="row">
+                <div class="col-100">
+                    <div class="anchor">
+                        <i class="fa-solid fa-anchor"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="all">
+
+                <div class="icons">
+                    <div class="main">
+                        <div class="yuhu">
+                            <div class="yo">
+                                <i class="fa-solid fa-vr-cardboard"></i>
+                            </div>
+                        </div>
+                        <h3>SLEEK DESIGN</h3>
+
+                    </div>
+                    <span>______</span>
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptatibus eos</h4>
+                </div>
+                <div class="icons">
+                    <div class="main">
+                        <div class="yuhu">
+                            <div class="yo"> <i class="fa-regular fa-heart"></i></div>
+                        </div>
+                        <h3>CLEAN CODE</h3>
+                    </div>
+                    <span>______</span>
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptatibus eos</h4>
+                </div>
+                <div class="icons">
+                    <div class="main">
+                        <div class="yuhu">
+                            <div class="yo"> <i class="fa-regular fa-lightbulb"></i></div>
+                        </div>
+                        <h3>CREATIVE IDEAS</h3>
+                    </div>
+                    <span>______</span>
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptatibus eos</h4>
+                </div>
+                <div class="icons">
+                    <div class="main">
+                        <div class="yuhu">
+                            <div class="yo"> <i class="fa-regular fa-message"></i></div>
+                        </div>
+                        <h3>FREE SUPPORT</h3>
+                    </div>
+                    <span>______</span>
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptatibus eos</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
