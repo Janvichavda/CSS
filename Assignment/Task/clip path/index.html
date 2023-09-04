@@ -22,7 +22,6 @@
         }
 
         .container {
-
             background-image: url(images/1.jpg);
             width: 100%;
             display: block;
@@ -168,7 +167,6 @@
             background-color: white;
             padding: 10px;
             box-shadow: 0px 0px 0px 10px rgba(128, 128, 128, 0.104);
-
         }
 
         .icons {
@@ -199,15 +197,44 @@
             font-size: 20px;
             width: 25%;
             margin: 0 auto;
+            /* transform: rotate(55deg); */
+
         }
 
-        .icons .yuhu:hover {
+        .yuhu:hover {
             transform: rotate(55deg);
         }
 
-
         .yo:hover {
             border: 1px solid;
+        }
+
+        .pos-rel {
+            position: relative;
+        }
+
+        .pos-ab {
+            position: absolute;
+        }
+
+        .fa-vr-cardboard {
+            top: 28px;
+            left: 130px;
+        }
+
+        .fa-heart {
+            top: 28px;
+            left: 130px;
+        }
+
+        .fa-lightbulb {
+            top: 28px;
+            left: 130px;
+        }
+
+        .fa-message {
+            top: 28px;
+            left: 130px;
         }
 
         .main:hover {
@@ -285,11 +312,12 @@
             </div>
             <div class="all">
 
-                <div class="icons">
+                <div class="icons pos-rel">
+                    <i class="fa-solid fa-vr-cardboard pos-ab"></i>
+
                     <div class="main">
                         <div class="yuhu">
                             <div class="yo">
-                                <i class="fa-solid fa-vr-cardboard"></i>
                             </div>
                         </div>
                         <h3>SLEEK DESIGN</h3>
@@ -298,30 +326,38 @@
                     <span>______</span>
                     <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptatibus eos</h4>
                 </div>
-                <div class="icons">
+                <div class="icons pos-rel">
+                    <i class="fa-regular fa-heart pos-ab"></i>
+
                     <div class="main">
                         <div class="yuhu">
-                            <div class="yo"> <i class="fa-regular fa-heart"></i></div>
+                            <div class="yo">
+                            </div>
+
                         </div>
                         <h3>CLEAN CODE</h3>
                     </div>
                     <span>______</span>
                     <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptatibus eos</h4>
                 </div>
-                <div class="icons">
+                <div class="icons pos-rel">
+                    <i class="fa-regular fa-lightbulb pos-ab"></i>
                     <div class="main">
                         <div class="yuhu">
-                            <div class="yo"> <i class="fa-regular fa-lightbulb"></i></div>
+                            <div class="yo">
+
+                            </div>
                         </div>
                         <h3>CREATIVE IDEAS</h3>
                     </div>
                     <span>______</span>
                     <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptatibus eos</h4>
                 </div>
-                <div class="icons">
+                <div class="icons pos-rel">
+                    <i class="fa-regular fa-message pos-ab"></i>
                     <div class="main">
                         <div class="yuhu">
-                            <div class="yo"> <i class="fa-regular fa-message"></i></div>
+                            <div class="yo"></div>
                         </div>
                         <h3>FREE SUPPORT</h3>
                     </div>
