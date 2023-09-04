@@ -60,7 +60,36 @@
             width: 100%;
         }
 
+        .span {
+            display: block;
+            height: 4px;
+            width: 4px;
+            padding: 3px;
+            border-radius: 50%;
+            background-color: red;
+            margin: 0 auto;
+            position: relative;
+        }
 
+        .span::before {
+            content: '';
+            width: 70px;
+            height: 1px;
+            background-color: white;
+            position: absolute;
+            right: 18px;
+            top: 3px;
+        }
+
+        .span::after {
+            content: '';
+            width: 70px;
+            height: 1px;
+            background-color: white;
+            position: absolute;
+            right: -80px;
+            top: 3px;
+        }
 
         a:hover {
             color: red;
@@ -231,7 +260,7 @@
                         <h1> WELCOME TO SKY</h1>
                         <i class="fa-solid fa-arrow-right rit"></i>
                     </div>
-                    <span>_______ . _______</span>
+                    <span class="span"></span>
                     <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure vel alias velit eos quos
                         voluptates
                         dolore est veritatis sed, repellat sequi commodi temporibus tempora necessita tibus totam,
